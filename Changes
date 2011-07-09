@@ -1,0 +1,9 @@
+Revision history for Dist-Zilla-PluginBundle-GPHAT
+
+{{$NEXT}}
+
+0.02 Jul 8 2011
+  * Use @GPHAT to build ourselves
+  
+0.01 Jul 8 2011
+  * Released
