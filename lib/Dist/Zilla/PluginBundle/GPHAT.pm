@@ -30,9 +30,7 @@ This is the plugin bundle that GPHAT uses.  It's equivalent to:
 
     [MetaJSON]
 
-    [MetaResources]
-    repository.url  = https://github.com/gphat/data-verifier
-    repository.type = git
+    [GithubMeta]
 
     [CopyFilesFromBuild]
     copy            = README.mkdn
@@ -76,12 +74,19 @@ sub configure {
     $self->add_plugins(qw(
         SynopsisTests
         PodSyntaxTests
-        MetaJson
+        MetaJSON
+        GithubMeta
     ));
 
     $self->add_plugins([
         'CopyFilesFromBuild' => {
             format => 'README.mkdn'
+        }
+    ]);
+    
+    $self->add_plugins([
+        'PruneFiles' => {
+            filenames => qw(dist.ini weaver.ini)
         }
     ]);
 
