@@ -86,7 +86,7 @@ sub configure {
     
     $self->add_plugins([
         'PruneFiles' => {
-            filenames => qw(dist.ini weaver.ini)
+            filenames => [ qw(dist.ini weaver.ini) ]
         }
     ]);
 
