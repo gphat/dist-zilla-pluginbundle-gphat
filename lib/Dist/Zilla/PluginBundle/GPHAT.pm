@@ -67,7 +67,7 @@ sub configure {
 
     $self->add_plugins([
         'NextRelease' => {
-            copy => '%v %{MMM d yyyy}d'
+            format => '%v %{MMM d yyyy}d'
         }
     ]);
 
@@ -80,7 +80,7 @@ sub configure {
 
     $self->add_plugins([
         'CopyFilesFromBuild' => {
-            format => 'README.mkdn'
+            copy => 'README.mkdn'
         }
     ]);
     
