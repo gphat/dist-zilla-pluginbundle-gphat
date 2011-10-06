@@ -67,7 +67,7 @@ sub configure {
 
     $self->add_plugins([
         'NextRelease' => {
-            format => '%v %{MMM d yyyy}d'
+            copy => '%v %{MMM d yyyy}d'
         }
     ]);
 
