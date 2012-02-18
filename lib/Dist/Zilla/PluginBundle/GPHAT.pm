@@ -31,6 +31,7 @@ This is the plugin bundle that GPHAT uses.  It's equivalent to:
     [MetaJSON]
 
     [GithubMeta]
+    issues = 1
 
     [CopyFilesFromBuild]
     copy            = README.mkdn
@@ -75,8 +76,13 @@ sub configure {
         SynopsisTests
         PodSyntaxTests
         MetaJSON
-        GithubMeta
     ));
+
+    $self->add_plugins([
+        'GithubMeta' => {
+            issues => 1
+        }
+    ]);
 
     $self->add_plugins([
         'CopyFilesFromBuild' => {
