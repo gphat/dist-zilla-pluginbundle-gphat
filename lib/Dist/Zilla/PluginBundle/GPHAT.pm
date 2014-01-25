@@ -24,7 +24,7 @@ This is the plugin bundle that GPHAT uses.  It's equivalent to:
     [NextRelease]
     format          = %v %{MMM d yyyy}d
 
-    [SynopsisTests]
+    [Test::Synopsis]
 
     [PodSyntaxTests]
 
