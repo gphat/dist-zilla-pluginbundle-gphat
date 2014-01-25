@@ -1,6 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-GPHAT
 
 {{$NEXT}}
+
+0.05 Jan 24 2014
   * Set issues to true, no more RT
 
 0.03 Oct 6 2011
