@@ -73,7 +73,7 @@ sub configure {
     ]);
 
     $self->add_plugins(qw(
-        SynopsisTests
+        Test::Synopsis
         PodSyntaxTests
         MetaJSON
     ));
@@ -89,7 +89,7 @@ sub configure {
             copy => 'README.mkdn'
         }
     ]);
-    
+
     $self->add_plugins([
         'PruneFiles' => {
             filenames => [ qw(dist.ini weaver.ini) ]

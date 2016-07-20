@@ -1,6 +1,7 @@
 Revision history for Dist-Zilla-PluginBundle-GPHAT
 
 {{$NEXT}}
+  * Use [Test::Synopsis] instead of deprecated plugin [SynopsisTests]. (MANWAR)
 
 0.06 Oct 16 2014
 
@@ -11,6 +12,6 @@ Revision history for Dist-Zilla-PluginBundle-GPHAT
 
 0.02 Jul 8 2011
   * Use @GPHAT to build ourselves
-  
+
 0.01 Jul 8 2011
   * Released
